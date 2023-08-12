@@ -1,0 +1,35 @@
+{
+  "status": "Success",
+  "data": [
+    {
+      "rollNo": "01",
+      "name": "Uzair",
+      "className": "9th",
+      "section": "B"
+    },
+    {
+      "rollNo": "02",
+      "name": "Sufiyan",
+      "className": "9th",
+      "section": "B"
+    },
+    {
+      "rollNo": "03",
+      "name": "Umair",
+      "className": "9th",
+      "section": "B"
+    },
+    {
+      "rollNo": "04",
+      "name": "Yasir",
+      "className": "9th",
+      "section": "B"
+    },
+    {
+      "rollNo": "05",
+      "name": "Kamran",
+      "className": "9th",
+      "section": "A"
+    }
+  ]
+}
