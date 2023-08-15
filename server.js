@@ -28,12 +28,12 @@ app.get("/v1/studentData/getStudent/:rollNo", (req, res) => {
   const singleStudent = parsedData?.data?.find((student) => {
     console.log(student)
     console.log(student.rollNo)
-    student.rollNo == req.params.rollNo
+    return student.rollNo == req.params.rollNo
   })
   console.log(singleStudent)
 
   res.status(200).json({
-    data: singleStudent
+    data: singleStudent;
   });
 });
 
