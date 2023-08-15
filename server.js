@@ -18,12 +18,18 @@ app.get("/v1/studentData/getStudent", (req, res) => {
 });
 
 app.get("/v1/studentData/getStudent/:rollNo", (req, res) => {
+  console.log(req.params.rollNo)
+  console.log(typeof req.params.rollNo)
 
   if (+(req.params.rollNo) > parsedData?.data.length) {
     return res.status(400).send("Data Not Available")
   }
 
-  const singleStudent = parsedData?.data?.find(student => student.rollNo == req.params.rollNo)
+  const singleStudent = parsedData?.data?.find((student) => {
+    console.log(student)
+    console.log(student.rollNo)
+    student.rollNo == req.params.rollNo
+  })
   console.log(singleStudent)
 
   res.status(200).json({
