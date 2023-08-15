@@ -33,7 +33,7 @@ app.get("/v1/studentData/getStudent/:rollNo", (req, res) => {
   console.log(singleStudent)
 
   res.status(200).json({
-    data: singleStudent;
+    data: singleStudent
   });
 });
 
